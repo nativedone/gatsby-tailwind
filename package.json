@@ -5,8 +5,10 @@
   "version": "0.1.0",
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
+    "@emotion/babel-preset-css-prop": "^10.0.27",
     "@emotion/core": "^10.0.27",
     "@emotion/styled": "^10.0.27",
+    "babel-plugin-macros": "^2.8.0",
     "gatsby": "^2.19.7",
     "gatsby-image": "^2.2.39",
     "gatsby-plugin-emotion": "^4.1.22",
@@ -23,6 +25,7 @@
     "tailwind.macro": "^1.0.0-alpha.10"
   },
   "devDependencies": {
+    "@babel/plugin-proposal-class-properties": "^7.8.3",
     "prettier": "^1.19.1",
     "tailwindcss": "^1.2.0"
   },
