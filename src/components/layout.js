@@ -10,6 +10,10 @@ import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 
 import Header from "./header"
+import Main from "./main"
+import VerticalSpace from "./VerticalSpace"
+
+import Button, { TailwindButton } from "./button"
 import "./layout.css"
 
 const Layout = ({ children }) => {
@@ -29,11 +33,19 @@ const Layout = ({ children }) => {
       <div
         style={{
           margin: `0 auto`,
-          maxWidth: 960,
+          // maxWidth: 960,
           padding: `0 1.0875rem 1.45rem`,
         }}
       >
-        <main>{children}</main>
+        <VerticalSpace />
+
+        <Button />
+
+        <VerticalSpace />
+
+        <TailwindButton>Hi there</TailwindButton>
+        <VerticalSpace />
+        <Main>{children}</Main>
         <footer>
           © {new Date().getFullYear()}, Built with
           {` `}
